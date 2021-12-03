@@ -1,3 +1,9 @@
+use sgx_tstd as std;
+use std::{
+    string::String,
+    vec::Vec,
+};
+
 use std::borrow::Cow;
 use std::string::FromUtf8Error;
 

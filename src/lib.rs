@@ -28,6 +28,9 @@
 //! ```
 //!
 //! This library returns [`Cow`](https://doc.rust-lang.org/stable/std/borrow/enum.Cow.html) to avoid allocating when decoding/encoding is not needed. Call `.into_owned()` on the `Cow` to get a `Vec` or `String`.
+#![no_std]
+
+extern crate sgx_tstd as std;
 
 mod enc;
 pub use enc::encode;

@@ -1,7 +1,12 @@
+use sgx_tstd as std;
+
 use std::borrow::Cow;
 use std::fmt;
 use std::io;
 use std::str;
+use std::{
+    string::String,
+};
 
 /// Wrapper type that implements `Display`. Encodes on the fly, without allocating.
 /// Percent-encodes every byte except alphanumerics and `-`, `_`, `.`, `~`. Assumes UTF-8 encoding.

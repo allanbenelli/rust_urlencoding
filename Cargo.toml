@@ -11,5 +11,9 @@ readme = "README.md"
 repository = "https://github.com/kornelski/rust_urlencoding"
 edition = "2018"
 
+[dependencies]
+sgx_tstd = { rev = "v1.1.3", git = "https://github.com/apache/teaclave-sgx-sdk.git", features = ["untrusted_fs","net","backtrace"] }
+
+
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
